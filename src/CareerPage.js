@@ -7,11 +7,31 @@ const Header = (props) => {
   return (
     <div className="CareerPage">
       <h1>{career.title}</h1>
-      <h2>{career.description}</h2>
-      <h2>{career.benefits}</h2>
-      <h2>{career.drawbacks}</h2>
-      <h2>{career.reqs}</h2>
-      <h2>{career.drawbacks}</h2>
+      <h3>{career.description}</h3>
+
+      <ul>
+        {career.benefits.map((l) => (
+          <li>{l}</li>
+        ))}
+      </ul>
+
+      <ul>
+        {career.drawbacks.map((l) => (
+          <li>{l}</li>
+        ))}
+      </ul>
+
+      <ul>
+        {career.reqs.map((l) => (
+          <li>{l}</li>
+        ))}
+      </ul>
+
+      <ul>
+        {career.warnings.map((l) => (
+          <li>{l}</li>
+        ))}
+      </ul>
     </div>
   );
 };
