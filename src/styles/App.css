@@ -19,3 +19,7 @@ button {
   font-size: 140%;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}

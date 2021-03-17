@@ -10,14 +10,18 @@ const Header = {
   textAlign: "center",
   color: "#2B430C",
   fontSize: "22px",
-  marginBottom: "20px"
+  marginBottom: "20px",
+  marginLeft: "40px",
+  marginRight: "40px",
   
 }
 const bodyStyle = {
+  marginLeft: "20px",
+  marginRight: "20px",
   padding: "2px 20px",
   textAlign: "left",
   color: "black",
-  fontSize: "100%"
+  fontSize: "20px"
 }
 const Home = () => {
   return (
