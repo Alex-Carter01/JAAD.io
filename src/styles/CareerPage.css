@@ -1,10 +1,20 @@
 
 .CareerPage {
-    text-align: center;
+    text-align: left;
     width: 70%;
     margin: auto;
+    font-size: 120%;
 }
 
 .CareerPage h2 {
     margin-top: 5%;
+
+}
+
+.CareerPage h4 {
+    margin-left: 0px;
+}
+
+.CareerPage h4 {
+    margin-left: 40px;
 }

@@ -6,10 +6,10 @@ import { styled, useStyletron } from "styletron-react";
 const Anchor = styled("a", {
   alignment: "center",
   fontSize: "20px",
-  color: "red",
+  color: "black",
 });
 
-const COLUMNS = ["Career Title"];
+const COLUMNS = ["Careers - Learn More"];
 const DATA = [
   [<Anchor href="/careers/police_officer"> Police Officer </Anchor>],
   [
@@ -18,23 +18,19 @@ const DATA = [
       Cosmetology Service Provider{" "}
     </Anchor>,
   ],
+  [<Anchor href="/careers/construction_worker"> Construction Worker </Anchor>],
   [<Anchor href="/careers/dental_hygenist"> Dental Hygenist </Anchor>],
   [<Anchor href="/careers/firefighter"> Firefighter </Anchor>],
 ];
 export default function Careers() {
+
+  const careers = {
+    marginLeft: "40%",
+    fontSize: "24px",
+  }
   return (
-    <div className="CareersExplorer">
+    <div className="CareersExplorer" style={careers}>
       <Table columns={COLUMNS} data={DATA} />
     </div>
   );
 }
-
-// const Careers = () => {
-//   return (
-//     <div className="Careers">
-//       <h1>Career Explorer!</h1>
-//     </div>
-//   );
-// };
-
-// export default Careers;
