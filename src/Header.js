@@ -7,17 +7,9 @@ const Header = () => {
 
   return (
     <div className="Header">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/careers">Career Explorer</Link>
-        </li>
-        <li>
-          <Link to="/survey">Career Survey</Link>
-        </li>
-      </ul>
+        <Link to="/">Home</Link> |
+        <Link to="/careers">Career Explorer</Link> |
+        <Link to="/survey">Career Survey</Link>
     </div>
   );
 };

@@ -1,7 +1,21 @@
 .App {
-  text-align: center;
+  text-align: left;
+  width: '100px';
+  height: '100px';
+  background-color:'#2B430C';
 }
 
 .Footer {
-  color: red;
+  color: rgb(43, 67, 12);
+  font-size: "50%";
+  text-align: center;
+  bottom: 10px;
+  left: 40%;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  font-size: 140%;
+  text-align: center;
 }

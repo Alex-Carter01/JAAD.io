@@ -1,9 +1,12 @@
 .Home {
-  color: green;
+  color: rgb(0, 9, 128);
+  align-content: flex-start;
+  font-size: 12pt;
 }
 
 .Careers {
-    color: purple;
+    color: rgb(197, 11, 197);
+    
 }
 
 .Survey {
