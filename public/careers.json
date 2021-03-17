@@ -1,7 +1,7 @@
 {
 	"careers" : [
 		{
-			"title": "construction worker",
+			"title": "construction_worker",
 			"description":"Construction workers (also known as construction laborers) work on construction sites. They are responsible for a number of on-site tasks, such as removing debris, erecting scaffolding, loading and unloading building materials, and assisting with operating heavy equipment.",
 			"benefits":[
 				"$36,860/year on average",
@@ -52,6 +52,7 @@
 			]
 		},
 		{
+			"name": "dental_hygenist",
 			"title": "Dental Hygenist",
 			"description":"Dental hygienists are responsible for tooth cleanings, X-rays, and the majority of the work in a dental office which does not require a medical degree.",
 			"benefits":[
@@ -73,7 +74,7 @@
 			]
 		},
 		{
-			"title": "Firefighter",
+			"title": "firefighter",
 			"description":"Public safety worker focussing on fires. Trained first responders and often responsible for minor medical care. Respond to house fires and attempt to extinguish them while saving as many people as possible. Also provides public education on fire prevention in schools.",
 			"benefits":[
 				"Average salary of $49,000. Salary varies significantly depending on location, and years of experience. You often start out making a very low salary to eventuall earn much more after promotions.",
@@ -105,7 +106,7 @@
 			]
 		},
 		{
-			"title": "police officer",
+			"title": "police_officer",
 			"description":"Public law enforcement officer. Meant to serve the community. Many responsibilities including patrolling, reporting to crime scenes, responding to caller emergencies, and enforcing traffic violations.",
 			"benefits":[
 				"Average Salary of $62,000. This changes significantly based on location and rank. Often paid during training.",
