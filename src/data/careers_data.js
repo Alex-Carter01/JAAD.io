@@ -1,4 +1,4 @@
-const careers_data = {
+export const careers_data = {
   careers: [
     {
       name: "construction_worker",
@@ -143,5 +143,3 @@ const careers_data = {
     },
   ],
 };
-
-export default careers_data;

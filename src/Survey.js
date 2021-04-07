@@ -7,6 +7,9 @@ import { ArrowLeft, ArrowRight } from "baseui/icon";
 
 import { survey_data } from "./data/survey_data";
 
+import { SurveyResult } from "./SurveyResult";
+import { predictCareer } from "./predict_career";
+
 const SurveyStyle = {
   textAlign: "left",
   marginLeft: "40%",
@@ -40,8 +43,7 @@ const createResponseArray = () => {
 const Survey = () => {
   const [questionNumber, setQuestionNumber] = useState();
   const [responses, setResponses] = useState(createResponseArray());
-
-  console.log(responses);
+  const [submitted, setSubmitted] = useState(false);
 
   const changeQuestion = (direction) => {
     if (direction == "left") {
@@ -55,6 +57,7 @@ const Survey = () => {
           : questionNumber
       );
     } else if (direction == "submit") {
+      setSubmitted(true);
     }
   };
 
@@ -64,7 +67,8 @@ const Survey = () => {
 
   return (
     <div className="Survey" style={SurveyStyle}>
-      {survey_data[questionNumber] && (
+      {submitted && <SurveyResult career={predictCareer(responses)} />}
+      {!submitted && survey_data[questionNumber] && (
         <SurveyQuestion
           question={survey_data[questionNumber]}
           value={responses[questionNumber]}
@@ -75,20 +79,24 @@ const Survey = () => {
           }}
         />
       )}
-      <Button onClick={() => changeQuestion("left")}>
-        <ArrowLeft size={64} />
-        text
-      </Button>
-      <Button
-        onClick={() => changeQuestion("submit")}
-        disabled={questionNumber != survey_data.length - 1}
-      >
-        Submit
-      </Button>
-      <Button onClick={() => changeQuestion("right")}>
-        <ArrowRight size={64} />
-        text
-      </Button>
+      {!submitted && (
+        <div>
+          <Button onClick={() => changeQuestion("left")}>
+            <ArrowLeft size={64} />
+            text
+          </Button>
+          <Button
+            onClick={() => changeQuestion("submit")}
+            disabled={questionNumber != survey_data.length - 1}
+          >
+            Submit
+          </Button>
+          <Button onClick={() => changeQuestion("right")}>
+            <ArrowRight size={64} />
+            text
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

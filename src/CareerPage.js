@@ -1,5 +1,5 @@
 import "./styles/CareerPage.css";
-import careers_data from "./data/careers_data";
+import { careers_data } from "./data/careers_data";
 
 const Header = (props) => {
   const career = careers_data.careers.find((c) => c.name == props.career);
