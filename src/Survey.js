@@ -22,9 +22,9 @@ const SurveyQuestion = (props) => {
     <div className="SurveyQuestion">
       <p className="SurveyQuestionHeader">{props.question.question}</p>
       <RadioGroup onChange={props.onChange} value={props.value}>
-        {props.question.answers.map((answer, index) => {
+        {["Definitely Not", "Probably Not", "Neutral", "Probably", "Definitely"].map((answer, index) => {
           return (
-            <Radio type="radio" id="" value={index.toString()}>
+            <Radio type="radio" value={index.toString()}>
               {answer}
             </Radio>
           );
@@ -67,8 +67,9 @@ const Survey = () => {
 
   return (
     <div className="Survey" style={SurveyStyle}>
-      {submitted && <SurveyResult career={predictCareer(responses)} />}
+      {submitted && <SurveyResult careers={predictCareer(responses)} />}
       {!submitted && survey_data[questionNumber] && (
+        <div>In a career, can you see yourself...
         <SurveyQuestion
           question={survey_data[questionNumber]}
           value={responses[questionNumber]}
@@ -78,6 +79,7 @@ const Survey = () => {
             setResponses([...new_responses]);
           }}
         />
+        </div>
       )}
       {!submitted && (
         <div>
