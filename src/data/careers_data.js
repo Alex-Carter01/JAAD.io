@@ -13,6 +13,7 @@ export const careers_data = {
         "Can work on many different projects",
         "Construction workers accumulate many handy and unique skills",
       ],
+      averageSalary: "$36,860",
       drawbacks: [
         "Can be dangerous and very physically taxing",
         "Short term contracts can make employment inconsistent",
@@ -29,7 +30,7 @@ export const careers_data = {
         "Dangerous injuries can be sustained after just a minor mistake or slip",
       ],
       //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
-      holland: [28, 100, 0, 22, 0, 0]
+      holland: [28, 100, 0, 22, 0, 0],
     },
     {
       name: "cosmetologist",
@@ -43,6 +44,7 @@ export const careers_data = {
         "No boss",
         "Make your  own rules/decisions",
       ],
+      averageSalary: "$55,000-100,000",
       drawbacks: [
         "No company benefits",
         "Take responsibility for everything",
@@ -54,7 +56,7 @@ export const careers_data = {
       warnings: [
         "It takes usually 6 months to a year to be considered proficient and your prices usually reflect your level of skill (to make a lot you must be really good). Social media maintenance is a large component of success",
       ],
-      holland: [39, 56, 6, 72, 61, 89]
+      holland: [39, 56, 6, 72, 61, 89],
     },
     {
       name: "dental_hygenist",
@@ -66,6 +68,7 @@ export const careers_data = {
         "Flexible scheduling, often with the ability to work part time or full time.",
         "High career growth with an expected increase of over 11% in the next four years",
       ],
+      averageSalary: "$74,000",
       drawbacks: [
         "Few avenues for furthering your career or diversifying your type of work",
         "Monotonous or repetitive work",
@@ -77,7 +80,7 @@ export const careers_data = {
       warnings: [
         "Typically takes about 2 years to complete the required associates degree.",
       ],
-      holland: [45, 78, 33, 17, 83, 0]
+      holland: [45, 78, 33, 17, 83, 0],
     },
     {
       name: "firefighter",
@@ -95,6 +98,7 @@ export const careers_data = {
         "Everyone loves firefighters, especially kids",
         "Government job benefits (although as a warning these are becoming less dependable)",
       ],
+      averageSalary: "$49,000",
       drawbacks: [
         "Can witness lots of people suffering, dying, or going though hard times",
         "Long shifts",
@@ -112,7 +116,7 @@ export const careers_data = {
         "Danger! You go into burning buildings for a living.",
         "You witness human suffering",
       ],
-      holland: [20, 100, 33, 39, 64, 3]
+      holland: [20, 100, 33, 39, 64, 3],
     },
     {
       name: "police_officer",
@@ -129,6 +133,7 @@ export const careers_data = {
         "Government job benefits (although as a warning these are becoming less dependable)",
         "Provides a service to the community",
       ],
+      averageSalary: "$62,000",
       drawbacks: [
         "Potentially dangerous work environments",
         "Considered a high stress job. High rates of PTSD",
@@ -145,7 +150,7 @@ export const careers_data = {
         "Policing can take a severe mental health toll if you are not privy to the job.",
         "Before joining, ask yourself if you see policing as a benefit to society, to see if you will be satisfied by your job or left discontentful.",
       ],
-      holland: [45, 81, 17, 83, 61, 3]
+      holland: [45, 81, 17, 83, 61, 3],
     },
   ],
 };

@@ -6,9 +6,20 @@
 
 .Careers {
     color: rgb(197, 11, 197);
-    
 }
 
 .Survey {
     color: coral;
+    width: 80%;
+    margin: auto;
+}
+
+.SurveyResults {
+  width: 100%;
+}
+
+.SurveyResult {
+  border: black 1px solid;
+  border-radius: 5px;
+  width: 350px;
 }

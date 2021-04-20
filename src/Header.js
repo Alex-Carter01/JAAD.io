@@ -1,27 +1,69 @@
 import { Link, useLocation } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 import "./styles/Header.css";
 
 const HeaderStyle = {
-    color: "#2B430C",
-    textDecoration: "none",
-    fontSize: "40px",
-}
+  color: "#4D942C",
+  fontSize: "20px",
+  fontFamily: "Arial",
+  fontWeight: "bold",
+  backgroundColor: "#C9C9C9",
+  borderStyle: "solid",
+  borderColor: "#C9C9C9",
+  marginTop: "100px",
+  padding: "25px 50px 25px 50px",
+  textAlign: "center",
+};
 
 const divs = {
-    marginLeft: "20%",
-    marginBottom: "40px",
-    textDecoration: "none",
-}
+  textDecoration: "none",
+  textAlign: "center",
+  marginTop: "100px",
+  marginLeft: "150px",
+  marginRight: "150px",
+};
+
+const buttonStyle = {
+  backgroundColor: "#C9C9C9",
+  color: "#293D20",
+  padding: "20px 50px 20px 50px",
+  fontFamily: "Lato",
+  fontSize: "22px",
+};
 
 const Header = () => {
   const location = useLocation();
 
   return (
     <div className="Header" style={divs}>
-        <Link to="/"><span style={HeaderStyle}>Home</span></Link><span style={HeaderStyle}>|</span>
-        <Link to="/careers"><span style={HeaderStyle}>Career Explorer</span></Link><span style={HeaderStyle}>|</span>
-        <Link to="/survey"><span style={HeaderStyle}>Career Survey</span></Link>
+      <Link to="/intro">
+        <span style={HeaderStyle}>
+          {" "}
+          <Button style={buttonStyle}> Home </Button>{" "}
+        </span>
+      </Link>
+      <span style={HeaderStyle}>|</span>
+      <Link to="/careers">
+        <span style={HeaderStyle}>
+          {" "}
+          <Button style={buttonStyle}> Career Explorer </Button>{" "}
+        </span>
+      </Link>
+      <span style={HeaderStyle}>|</span>
+      <Link to="/">
+        <span style={HeaderStyle}>
+          {" "}
+          <Button style={buttonStyle}> About Us </Button>{" "}
+        </span>
+      </Link>
+      <span style={HeaderStyle}>|</span>
+      <Link to="/survey">
+        <span style={HeaderStyle}>
+          {" "}
+          <Button style={buttonStyle}> Career Survey </Button>{" "}
+        </span>
+      </Link>
     </div>
   );
 };
