@@ -13,7 +13,8 @@ import { predictCareer } from "./predict_career";
 const SurveyStyle = {
   margin: "auto",
   marginTop: "100px",
-  padding: "20px 10px 20px 10px",
+  marginBottom: "100px",
+  padding: "20px 80px 20px 80px",
   color: "black",
   fontSize: "26px",
   fontFamily: "Lato",
