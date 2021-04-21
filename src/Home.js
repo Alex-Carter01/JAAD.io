@@ -41,12 +41,12 @@ const imgStyle = {
 };
 
 const wrapStyle = {
-  backgroundColor: "#FFFFFF",
+  backgroundColor: "#DCFBCE",
   marginTop: "100px",
   marginLeft: "100px",
   marginRight: "100px",
   marginBottom: "100px",
-  padding: "5px 0px 0px 30px",
+  padding: "5px 0px 40px 30px",
 };
 const Home = () => {
   return (

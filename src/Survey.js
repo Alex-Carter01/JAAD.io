@@ -13,20 +13,18 @@ import { predictCareer } from "./predict_career";
 const SurveyStyle = {
   justifyContent: "flex-center",
   alignSelf: "flex-center",
-  marginLeft: "300px",
-  marginRight: "300px",
-  marginTop: "200px",
-  marginBottom: "200px",
-  padding: "0px 10px 10px 10px",
+  margin: "auto",
+  marginTop: "100px",
+  padding: "20px 10px 20px 10px",
   color: "black",
-  fontSize: "40px",
+  fontSize: "26px",
   fontFamily: "Lato",
   backgroundColor: "#DCFBCE",
 };
 
 const bottomStyle = {
   padding: "0px 10px 0px 10px",
-  alignSelf: "flex-center",
+  width: "100px",
   fontFamily: "Lato",
 };
 
@@ -38,6 +36,11 @@ const submitStyle = {
   backgroundColor: "#293D20",
   color: "#FFFFFF",
   fontSize: "30px",
+};
+
+const submitDisabledStyle = {
+  ...submitStyle,
+  backgroundColor: "#e3edde",
 };
 
 const SurveyQuestion = (props) => {
@@ -94,6 +97,8 @@ const Survey = () => {
     setQuestionNumber(0);
   }
 
+  const submitDisabled = questionNumber != survey_data.length - 1;
+
   return (
     <div className="Survey" style={SurveyStyle}>
       {submitted && <SurveyResult careers={predictCareer(responses)} />}
@@ -114,17 +119,18 @@ const Survey = () => {
       {!submitted && (
         <div>
           <Button onClick={() => changeQuestion("left")} style={bottomStyle}>
-            <ArrowLeft size={64} />
+            <ArrowLeft />
             prev
           </Button>
           <Button
             onClick={() => changeQuestion("submit")}
-            disabled={questionNumber != survey_data.length - 1}
+            disabled={submitDisabled}
+            style={!submitDisabled ? submitStyle : submitDisabledStyle}
           >
             Submit
           </Button>
           <Button onClick={() => changeQuestion("right")} style={bottomStyle}>
-            <ArrowRight size={64} />
+            <ArrowRight />
             next
           </Button>
         </div>

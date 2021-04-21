@@ -20,14 +20,13 @@ const divs = {
   textDecoration: "none",
   textAlign: "center",
   marginTop: "100px",
-  marginLeft: "150px",
-  marginRight: "150px",
+  margin: "auto",
 };
 
 const buttonStyle = {
   backgroundColor: "#C9C9C9",
   color: "#293D20",
-  padding: "20px 50px 20px 50px",
+  padding: "10px 50px 10px 50px",
   fontFamily: "Lato",
   fontSize: "22px",
 };

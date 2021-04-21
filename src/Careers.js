@@ -13,7 +13,7 @@ import { careers_data } from "./data/careers_data";
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    width: 650,
   },
 });
 
@@ -49,6 +49,10 @@ const leftHeaderStyle = {
   padding: "20px 250px 20px 150px",
 };
 
+const containerStyling = {
+  overflowX: "hidden",
+};
+
 const wrapStyling = {
   marginTop: "100px",
   marginLeft: "100px",
@@ -78,7 +82,7 @@ export default function BasicTable() {
 
   return (
     <div style={wrapStyling}>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} style={containerStyling}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow style={headerStyle}>
@@ -118,7 +122,6 @@ export default function BasicTable() {
           </TableBody>
         </Table>
       </TableContainer>
-      <img style={imgStyle} src={logoT} alt="LogoT" />
     </div>
   );
 }

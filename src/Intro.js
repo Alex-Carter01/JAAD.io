@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 
 const welcomeStyle = {
   fontSize: "89px",
-  padding: "50px 950px 200px 0px",
+  padding: "50px 250px 50px 250px",
   fontColor: "#000000",
   fontFamily: "Lato",
 };
@@ -14,12 +14,12 @@ const imgStyle = {
   alignSelf: "flex-end",
   width: "300px",
   height: "240px",
-  marginLeft: "1500px",
+  marginLeft: "0px",
   marginBottom: "25px",
 };
 
 const wrapStyle = {
-  backgroundColor: "#FFFFFF",
+  backgroundColor: "#DCFBCE",
   marginTop: "100px",
   marginLeft: "100px",
   marginRight: "100px",
@@ -27,11 +27,17 @@ const wrapStyle = {
   padding: "5px 0px 0px 30px",
 };
 
+const buttonWrapStyle = {
+  width: "100%",
+  textAlign: "center",
+};
+
 const buttonStyle = {
   backgroundColor: "#293D20",
   padding: "20px 50px 20px 50px",
   fontFamily: "Lato",
   fontSize: "22px",
+  marginLeft: "auto",
 };
 
 const Intro = () => {
@@ -40,11 +46,16 @@ const Intro = () => {
       <div style={welcomeStyle}>
         {" "}
         Let's put together a plan that works for you!
+        <br />
+        <br />
+        <div style={buttonWrapStyle}>
+          <Button style={buttonStyle} variant="contained" href="/survey">
+            Lets Get Started
+          </Button>
+        </div>
+        <br />
+        <img style={imgStyle} src={logoT} alt="LogoT" />{" "}
       </div>
-      <Button style={buttonStyle} variant="contained" href="/survey">
-        Lets Get Started
-      </Button>
-      <img style={imgStyle} src={logoT} alt="LogoT" />
     </div>
   );
 };
