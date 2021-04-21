@@ -152,5 +152,88 @@ export const careers_data = {
       ],
       holland: [45, 81, 17, 83, 61, 3],
     },
+      {
+      name: "nursing_assistant",
+      title: "Nursing Assistants (CNA)",
+      description:
+        "Direct contact with patients, respond to calls. Assist and feed patients. Manage nursing care plans, and help instruct patients for how to follow recovery plans.",
+      benefits: [
+        "You get to help others - great for those who are selfless.",
+        "High demand for jobs - easy to find employment.",
+        "Further certifications are an easy path to advancement.",
+        "Generally spend more time on your feet than other careers, not a desk job, but also not diffucult labor.",
+        "High variety of work, often can explore new tasks.",
+
+      ],
+      averageSalary: "$25,700",
+      drawbacks: [
+        "Relatively low salary (Average of $25,700).",
+        "Have to watch injured and ill patients suffer.",
+        "It can take a while to become good at it",
+        "Some responsibilities involve bodily fluids or things not for the faint of heart.",
+      ],
+      reqs: [
+        "Certification typically takes only 4-12 weeks.",
+      ],
+      warnings: [
+        "As shown during the pandemic, this career can potentially demand intense hours.",
+      ],
+      //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
+      holland: [],
+    },
+  {
+      name: "anesthesiologist_technician",
+      title: "Anesthesiologist Technician",
+      description:
+        "Assist nurses, anesthesiologists, and doctors in providing care and administering anesthesia.",
+      benefits: [
+        "Average salary of $42,800",
+        "Fast-growing field, easy to find a position.",
+        "Additional certification opportunities can lead to job advancements.",
+        "Generally spend more time on your feet than other careers, not a desk job, but also not diffucult labor.",
+        "Direct career path to becoming an anesthesiology technologist position.",
+
+      ],
+      averageSalary: "$42,800",
+      drawbacks: [
+        "May require unexpected shifts on short notice.",
+        "May require additional continuing education to stay certified.",,
+      ],
+      reqs: [
+        "1-year Associates degrees.",
+        "High school diploma.",
+        "CPR Certification (1-day training).",
+      ],
+      warnings: [
+        "Make sure not to get confused by the alternative careers of anesthesiology technologist, Anesthesiologist assistant, or Anesthesiologist.",
+      ],
+      //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
+      holland: [],
+    },
+    {
+      name: "mammogram_operator",
+      title: "Mammogram operator",
+      description:
+        "Use low-dose X-ray imaging technology to run scans of patients. Look for breast tumors or cysts. Process patient records and consult with physicians.",
+      benefits: [
+        "Average salary of $63,900",
+        "Fast-growing field, easy to find a position.",
+        "Additional certification opportunities can lead to job advancements.",
+        "Generally spend more time on your feet than other careers, not a desk job, but also not diffucult labor.",
+      ],
+      averageSalary: "$63,900",
+      drawbacks: [
+        "Additional liscencing may be required to start practice.",
+        "May require additional continuing education to stay certified.",,
+      ],
+      reqs: [
+        "Associates degree in radiology - typically takes 3 semesters (1.5 years).",
+      ],
+      warnings: [
+        "Low risk of radiation exposure.",
+      ],
+      //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
+      holland: [],
+    },
   ],
 };
