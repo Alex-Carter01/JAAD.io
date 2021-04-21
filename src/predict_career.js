@@ -6,6 +6,7 @@ export const predictCareer = (responses) => {
   var scores = [0, 0, 0, 0, 0, 0];
   var conv, real, inv, ent, soc, art;
   conv = real = inv = ent = soc = art = 0;
+  //Computing rolling averages
   for (var i = 0; i < survey_data.length; i++) {
     switch(survey_data[i].category) {
       case 1: //Conventional
@@ -34,6 +35,7 @@ export const predictCareer = (responses) => {
         break;
     }
   }
+  //console.log(scores)
   //Step 2: Euclidian distance to best-fit careers
   var dists = []; //Technically distance squared
   for (var i = 0; i < careers_data.careers.length; i++) {
@@ -51,7 +53,7 @@ export const predictCareer = (responses) => {
   indices.sort(function (a, b) { return dists[a] < dists[b] ? -1 : dists[a] > dists[b] ? 1 : 0;});
   var results = [];
   for (var i = 0; i < 5; i++) {
-    results.push(careers_data.careers[indices[len - 1 - i]]);
+    results.push(careers_data.careers[indices[i]]);
   }
   return results;
 };

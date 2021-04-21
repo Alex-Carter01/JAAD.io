@@ -56,7 +56,7 @@ export const careers_data = {
       warnings: [
         "It takes usually 6 months to a year to be considered proficient and your prices usually reflect your level of skill (to make a lot you must be really good). Social media maintenance is a large component of success",
       ],
-      holland: [39, 56, 6, 72, 61, 89],
+      holland: [70, 15, 0, 0, 80, 0],
     },
     {
       name: "dental_hygenist",
@@ -80,7 +80,7 @@ export const careers_data = {
       warnings: [
         "Typically takes about 2 years to complete the required associates degree.",
       ],
-      holland: [45, 78, 33, 17, 83, 0],
+      holland: [75, 20, 0, 0, 83, 0],
     },
     {
       name: "firefighter",
@@ -179,7 +179,7 @@ export const careers_data = {
         "As shown during the pandemic, this career can potentially demand intense hours.",
       ],
       //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
-      holland: [],
+      holland: [75, 25, 0, 0, 100],
     },
   {
       name: "anesthesiologist_technician",
@@ -208,7 +208,7 @@ export const careers_data = {
         "Make sure not to get confused by the alternative careers of anesthesiology technologist, Anesthesiologist assistant, or Anesthesiologist.",
       ],
       //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
-      holland: [],
+      holland: [75, 25, 0, 0, 100],
     },
     {
       name: "mammogram_operator",
@@ -233,7 +233,7 @@ export const careers_data = {
         "Low risk of radiation exposure.",
       ],
       //of the format: Conventional, Realistic, Investigative, Enterprising, Social, Artistic
-      holland: [],
+      holland: [75, 25, 0, 0, 100],
     },
   ],
 };

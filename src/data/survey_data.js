@@ -10,7 +10,7 @@ export const survey_data = [
   },
   {
     question: "Working in a medical setting to help administer vaccines?",
-    category: 3,
+    category: 5,
   },
   {
     question: "Operating a beauty salon or barber shop?",
