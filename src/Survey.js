@@ -11,8 +11,6 @@ import { SurveyResult } from "./SurveyResult";
 import { predictCareer } from "./predict_career";
 
 const SurveyStyle = {
-  justifyContent: "flex-center",
-  alignSelf: "flex-center",
   margin: "auto",
   marginTop: "100px",
   padding: "20px 10px 20px 10px",
@@ -26,7 +24,13 @@ const bottomStyle = {
   padding: "0px 10px 0px 10px",
   width: "100px",
   fontFamily: "Lato",
+  borderRadius: "10px",
+  fontSize: "20px",
 };
+
+const radioResponseStyle = {};
+
+const radioGroupStyle = {};
 
 const submitStyle = {
   fontFamily: "Lato",
@@ -36,6 +40,7 @@ const submitStyle = {
   backgroundColor: "#293D20",
   color: "#FFFFFF",
   fontSize: "30px",
+  borderRadius: "10px",
 };
 
 const submitDisabledStyle = {
@@ -46,8 +51,12 @@ const submitDisabledStyle = {
 const SurveyQuestion = (props) => {
   return (
     <div className="SurveyQuestion" style={SurveyStyle}>
-      <p className="SurveyQuestionHeader">{props.question.question}</p>
-      <RadioGroup onChange={props.onChange} value={props.value}>
+      <h3 className="SurveyQuestionHeader">{props.question.question}</h3>
+      <RadioGroup
+        onChange={props.onChange}
+        value={props.value}
+        style={radioGroupStyle}
+      >
         {[
           "Definitely Not",
           "Probably Not",
@@ -57,7 +66,8 @@ const SurveyQuestion = (props) => {
         ].map((answer, index) => {
           return (
             <Radio type="radio" value={index.toString()}>
-              {answer}
+              <span>{answer}</span>
+              <br />
             </Radio>
           );
         })}
@@ -104,7 +114,10 @@ const Survey = () => {
       {submitted && <SurveyResult careers={predictCareer(responses)} />}
       {!submitted && survey_data[questionNumber] && (
         <div>
-          In a career, can you see yourself...
+          <span>In a career, can you see yourself... </span>
+          <span>
+            {"        "}({questionNumber + 1}/{survey_data.length})
+          </span>
           <SurveyQuestion
             question={survey_data[questionNumber]}
             value={responses[questionNumber]}

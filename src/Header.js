@@ -17,10 +17,8 @@ const HeaderStyle = {
 };
 
 const divs = {
-  textDecoration: "none",
   textAlign: "center",
-  marginTop: "100px",
-  margin: "auto",
+  marginTop: "10px",
 };
 
 const buttonStyle = {
@@ -31,33 +29,37 @@ const buttonStyle = {
   fontSize: "22px",
 };
 
+const linkStyle = {
+  textDecoration: "none",
+};
+
 const Header = () => {
   const location = useLocation();
 
   return (
     <div className="Header" style={divs}>
-      <Link to="/intro">
+      <Link to="/intro" style={linkStyle}>
         <span style={HeaderStyle}>
           {" "}
           <Button style={buttonStyle}> Home </Button>{" "}
         </span>
       </Link>
       <span style={HeaderStyle}>|</span>
-      <Link to="/careers">
+      <Link to="/careers" style={linkStyle}>
         <span style={HeaderStyle}>
           {" "}
           <Button style={buttonStyle}> Career Explorer </Button>{" "}
         </span>
       </Link>
       <span style={HeaderStyle}>|</span>
-      <Link to="/">
+      <Link to="/" style={linkStyle}>
         <span style={HeaderStyle}>
           {" "}
           <Button style={buttonStyle}> About Us </Button>{" "}
         </span>
       </Link>
       <span style={HeaderStyle}>|</span>
-      <Link to="/survey">
+      <Link to="/survey" style={linkStyle}>
         <span style={HeaderStyle}>
           {" "}
           <Button style={buttonStyle}> Career Survey </Button>{" "}

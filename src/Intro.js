@@ -34,6 +34,7 @@ const buttonWrapStyle = {
 
 const buttonStyle = {
   backgroundColor: "#293D20",
+  color: "white",
   padding: "20px 50px 20px 50px",
   fontFamily: "Lato",
   fontSize: "22px",

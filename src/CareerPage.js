@@ -22,7 +22,7 @@ const headerStylingRed = {
 
 const wrapStyling = {
   backgroundColor: "#DCFBCE",
-  padding: "50px 0px 100px 0px",
+  padding: "50px 100px 100px 100px",
   marginTop: "30px",
 };
 

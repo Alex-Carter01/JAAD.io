@@ -14,6 +14,7 @@ import { careers_data } from "./data/careers_data";
 const useStyles = makeStyles({
   table: {
     width: 650,
+    backgroundColor: "#DCFBCE",
   },
 });
 
@@ -46,7 +47,7 @@ const leftHeaderStyle = {
   fontFamily: "Lato",
   fontSize: "25px",
   color: "#293D20",
-  padding: "20px 250px 20px 150px",
+  padding: "20px 250px 20px 260px",
 };
 
 const containerStyling = {
@@ -58,6 +59,7 @@ const wrapStyling = {
   marginLeft: "100px",
   marginRight: "100px",
   marginBottom: "100px",
+  backgroundColor: "#DCFBCE",
 };
 
 const contentStyle = {
