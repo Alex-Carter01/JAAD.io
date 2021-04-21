@@ -24,6 +24,7 @@ const wrapStyling = {
   backgroundColor: "#DCFBCE",
   padding: "50px 100px 100px 100px",
   marginTop: "30px",
+  borderRadius: "10px",
 };
 
 const contentStyling = {

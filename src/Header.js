@@ -12,13 +12,15 @@ const HeaderStyle = {
   borderStyle: "solid",
   borderColor: "#C9C9C9",
   marginTop: "100px",
-  padding: "25px 50px 25px 50px",
   textAlign: "center",
 };
 
 const divs = {
   textAlign: "center",
   marginTop: "10px",
+  backgroundColor: "#C9C9C9",
+  padding: "5px 30px 5px 30px",
+  borderRadius: "5px",
 };
 
 const buttonStyle = {

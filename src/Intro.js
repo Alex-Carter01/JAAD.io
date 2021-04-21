@@ -25,6 +25,7 @@ const wrapStyle = {
   marginRight: "100px",
   marginBottom: "100px",
   padding: "5px 0px 0px 30px",
+  borderRadius: "5px",
 };
 
 const buttonWrapStyle = {

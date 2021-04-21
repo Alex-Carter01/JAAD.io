@@ -18,6 +18,7 @@ const SurveyStyle = {
   fontSize: "26px",
   fontFamily: "Lato",
   backgroundColor: "#DCFBCE",
+  borderRadius: "5px",
 };
 
 const bottomStyle = {

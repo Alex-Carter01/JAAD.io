@@ -47,7 +47,9 @@ const wrapStyle = {
   marginRight: "100px",
   marginBottom: "100px",
   padding: "5px 0px 40px 30px",
+  borderRadius: "5px",
 };
+
 const Home = () => {
   return (
     <div style={wrapStyle} className="Home">

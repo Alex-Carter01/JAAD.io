@@ -60,6 +60,7 @@ const wrapStyling = {
   marginRight: "100px",
   marginBottom: "100px",
   backgroundColor: "#DCFBCE",
+  borderRadius: "5px",
 };
 
 const contentStyle = {
