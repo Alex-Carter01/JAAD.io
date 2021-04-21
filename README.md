@@ -3,7 +3,7 @@
 
 
 ## Development
-1. Pull the repo from Githup
+1. Pull the repo from Github
 2. Run `npm install`
 3. Run `npm start`
 
