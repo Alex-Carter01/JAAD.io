@@ -35,7 +35,7 @@ export const predictCareer = (responses) => {
         break;
     }
   }
-  console.log(scores)
+  //console.log(scores)
   //Step 2: Euclidian distance to best-fit careers
   var dists = []; //Technically distance squared
   for (var i = 0; i < careers_data.careers.length; i++) {
