@@ -100,7 +100,7 @@ export default function BasicTable() {
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row" style={contentStyle}>
                   {" "}
-                  {row.name}
+                  {row.title}
                 </TableCell>
                 <TableCell align="right" style={contentStyle}>
                   {" "}
